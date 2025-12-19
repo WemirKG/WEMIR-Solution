@@ -455,3 +455,6 @@ a:hover{text-decoration:underline}
   .footer__grid{grid-template-columns: 1fr}
   .intake__grid{grid-template-columns: 1fr}
 }
+.modal[hidden] {
+  display: none !important;
+}
