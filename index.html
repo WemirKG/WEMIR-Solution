@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WEMIR SOLUTIONS — Matrix-Inspired AI Website Upgrades</title>
+  <meta name="description" content="WEMIR SOLUTIONS upgrades websites with AI tools and automation. Matrix-inspired, future-first integrations: Basic, Standard, Advanced, Fully Automated." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Top Nav -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html" aria-label="WEMIR SOLUTIONS Home">
+        <span class="brand__mark" aria-hidden="true">⟡</span>
+        <span class="brand__text">WEMIR <em>SOLUTIONS</em></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="pricing.html">Pricing</a>
+        <a href="demos.html">Demos</a>
+        <a href="intake.html" class="btn btn--ghost">Intake</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button class="iconbtn" id="toggleFx" type="button" aria-pressed="true" title="Toggle effects">
+          FX
+        </button>
+        <button class="iconbtn" id="toggleTheme" type="button" aria-pressed="false" title="Toggle theme">
+          ◐
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="main">
+    <section class="hero">
+      <canvas id="matrixRain" class="hero__canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero__content">
+        <div class="hero__badge">
+          <span class="pulse"></span>
+          <span>Matrix-grade automation for modern businesses</span>
+        </div>
+
+        <h1 class="hero__title">
+          Upgrade your website into an <span class="glow">AI-powered</span> system.
+        </h1>
+
+        <p class="hero__subtitle">
+          WEMIR SOLUTIONS integrates AI tools, automations, and workflows so your site captures leads, answers customers,
+          and delivers value faster—built for the minds of the future.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="intake.html">Start your upgrade</a>
+          <a class="btn btn--ghost" href="pricing.html">View tiers</a>
+        </div>
+
+        <div class="hero__stats" role="list" aria-label="Highlights">
+          <div class="stat" role="listitem">
+            <div class="stat__k">AI Integrations</div>
+            <div class="stat__v">Chat • Search • Forms • Workflows</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__k">Delivery</div>
+            <div class="stat__v">Fast + documented handoff</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__k">Style</div>
+            <div class="stat__v">Cyber-futuristic, conversion-focused</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tiers Preview -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Four upgrade tiers</h2>
+          <p>Choose your level of automation—then we plug in the right tools, flows, and UX to match.</p>
+        </div>
+
+        <div class="grid tiers">
+          <article class="card tier" data-tier="basic">
+            <div class="tier__top">
+              <h3>Basic Automation</h3>
+              <div class="price">$150</div>
+            </div>
+            <ul class="list">
+              <li>1–2 AI tools integrated</li>
+              <li>Lead capture + routing</li>
+              <li>Basic FAQ/assistant embed</li>
+              <li>Simple analytics setup</li>
+            </ul>
+            <div class="tier__cta">
+              <a class="btn btn--primary" href="pricing.html#basic">See details</a>
+              <button class="btn btn--ghost js-openModal" data-preset="Basic Automation" type="button">Quick start</button>
+            </div>
+          </article>
+
+          <article class="card tier" data-tier="standard">
+            <div class="tier__top">
+              <h3>Standard Automation</h3>
+              <div class="price">$350</div>
+            </div>
+            <ul class="list">
+              <li>2–4 AI tools integrated</li>
+              <li>Smart contact forms + CRM sync</li>
+              <li>Email/SMS automation hooks</li>
+              <li>Conversion-focused UX tweaks</li>
+            </ul>
+            <div class="tier__cta">
+              <a class="btn btn--primary" href="pricing.html#standard">See details</a>
+              <button class="btn btn--ghost js-openModal" data-preset="Standard Automation" type="button">Quick start</button>
+            </div>
+          </article>
+
+          <article class="card tier" data-tier="advanced">
+            <div class="tier__top">
+              <h3>Advanced Automation</h3>
+              <div class="price">$555</div>
+            </div>
+            <ul class="list">
+              <li>4–7 AI tools integrated</li>
+              <li>Multi-step funnels + segmentation</li>
+              <li>Auto-generated responses + content</li>
+              <li>Dashboards + event tracking</li>
+            </ul>
+            <div class="tier__cta">
+              <a class="btn btn--primary" href="pricing.html#advanced">See details</a>
+              <button class="btn btn--ghost js-openModal" data-preset="Advanced Automation" type="button">Quick start</button>
+            </div>
+          </article>
+
+          <article class="card tier tier--vip" data-tier="full">
+            <div class="tier__top">
+              <h3>Fully Automated</h3>
+              <div class="price">$1,500</div>
+            </div>
+            <ul class="list">
+              <li>End-to-end automation system</li>
+              <li>Intake → fulfillment workflows</li>
+              <li>AI assistant tuned to your business</li>
+              <li>Hardening + documentation + training</li>
+            </ul>
+            <div class="tier__cta">
+              <a class="btn btn--primary" href="pricing.html#full">See details</a>
+              <button class="btn btn--ghost js-openModal" data-preset="Fully Automated" type="button">Quick start</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upgrade Builder -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>AI Upgrade Builder</h2>
+          <p>Answer a few questions. Get a recommended tier and a clear build plan.</p>
+        </div>
+
+        <div class="card builder">
+          <div class="builder__grid">
+            <div class="builder__controls">
+              <label class="field">
+                <span>What do you want automated?</span>
+                <select id="goal">
+                  <option value="leads">Lead capture + follow-up</option>
+                  <option value="support">Customer support + FAQs</option>
+                  <option value="content">Content generation + updates</option>
+                  <option value="sales">Sales funnel + conversions</option>
+                  <option value="all">All of the above</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span>How many tools do you want integrated?</span>
+                <input id="toolCount" type="range" min="1" max="10" value="2" />
+                <div class="rangeMeta">
+                  <span>1</span>
+                  <strong id="toolCountLabel">2</strong>
+                  <span>10</span>
+                </div>
+              </label>
+
+              <label class="field">
+                <span>Do you need CRM + email automation?</span>
+                <div class="seg">
+                  <button class="seg__btn is-on" type="button" data-seg="crm" data-val="yes">Yes</button>
+                  <button class="seg__btn" type="button" data-seg="crm" data-val="no">No</button>
+                </div>
+              </label>
+
+              <label class="field">
+                <span>Do you want “hands-off” fulfillment flows?</span>
+                <div class="seg">
+                  <button class="seg__btn" type="button" data-seg="fulfill" data-val="yes">Yes</button>
+                  <button class="seg__btn is-on" type="button" data-seg="fulfill" data-val="no">No</button>
+                </div>
+              </label>
+
+              <button class="btn btn--primary" id="buildPlan" type="button">Generate plan</button>
+            </div>
+
+            <div class="builder__output">
+              <div class="output__header">
+                <div class="tag">Recommendation</div>
+                <h3 id="recTier">Standard Automation</h3>
+                <p class="muted" id="recWhy">Balanced upgrades that automate lead flow and customer follow-up.</p>
+              </div>
+
+              <ol class="steps" id="recSteps">
+                <li>Audit your current site and conversion flow.</li>
+                <li>Integrate AI tools for lead capture and routing.</li>
+                <li>Add automation hooks for follow-up and tracking.</li>
+              </ol>
+
+              <div class="output__cta">
+                <a class="btn btn--ghost" href="demos.html">See live demos</a>
+                <a class="btn btn--primary" href="intake.html">Start intake</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="note">
+          Note: GitHub Pages is static hosting. For payments, server-side AI calls, and private keys, you’ll eventually want
+          a backend (Vercel/Netlify/Cloudflare). This site is built so upgrading later is straightforward.
+        </p>
+      </div>
+    </section>
+
+    <!-- Proof / Social -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Built to convert, not just to look futuristic</h2>
+          <p>High-impact UI, fast load time, and a clean path from curiosity → confidence → intake.</p>
+        </div>
+
+        <div class="grid proof">
+          <div class="card">
+            <h3>Conversion UX</h3>
+            <p class="muted">CTAs in every key section, readable typography, and friction-reduced intake flow.</p>
+          </div>
+          <div class="card">
+            <h3>Automation-first</h3>
+            <p class="muted">We design workflows as systems: triggers, routes, logs, and human handoff points.</p>
+          </div>
+          <div class="card">
+            <h3>Future-proof</h3>
+            <p class="muted">Modular sections + shared JS/CSS so you can add tools, pages, and integrations quickly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>FAQ</h2>
+          <p>Direct answers that reduce doubt.</p>
+        </div>
+
+        <div class="faq" id="faq">
+          <button class="faq__q" aria-expanded="false">
+            Can this run fully on GitHub Pages?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__a" hidden>
+            <p>
+              The website and demos run on GitHub Pages. However, private API keys and server-side AI calls should not be placed
+              in front-end code. For true “generate inside the site,” you’ll upgrade to a backend (Vercel/Netlify).
+            </p>
+          </div>
+
+          <button class="faq__q" aria-expanded="false">
+            What does “AI tools integrated” mean?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__a" hidden>
+            <p>
+              Examples: AI chat assistant embed, smart forms, CRM sync, auto-email follow-ups, content generation workflows,
+              analytics events, and internal dashboards.
+            </p>
+          </div>
+
+          <button class="faq__q" aria-expanded="false">
+            How do I start?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__a" hidden>
+            <p>
+              Use the intake page. You’ll answer a few questions, download your brief, then send it (or copy/paste it) to your
+              preferred contact channel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <div class="brand brand--foot">
+            <span class="brand__mark" aria-hidden="true">⟡</span>
+            <span class="brand__text">WEMIR <em>SOLUTIONS</em></span>
+          </div>
+          <p class="muted">
+            Matrix-inspired AI upgrades and automation systems for modern websites.
+          </p>
+        </div>
+
+        <div class="footer__links" aria-label="Footer links">
+          <a href="pricing.html">Pricing</a>
+          <a href="demos.html">Demos</a>
+          <a href="intake.html">Intake</a>
+        </div>
+
+        <div class="footer__fine">
+          <span class="muted">© <span id="year"></span> WEMIR SOLUTIONS</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__panel">
+      <div class="modal__head">
+        <h3 id="modalTitle">Quick start</h3>
+        <button class="iconbtn" id="closeModal" type="button" aria-label="Close">✕</button>
+      </div>
+      <p class="muted" id="modalText">
+        Tell us your website and goal. We’ll reply with a build plan aligned to your selected tier.
+      </p>
+      <form class="modal__form" id="quickForm">
+        <label class="field">
+          <span>Website URL</span>
+          <input name="url" placeholder="https://yourwebsite.com" />
+        </label>
+        <label class="field">
+          <span>Goal</span>
+          <input name="goal" placeholder="More leads, better support, automate bookings..." />
+        </label>
+        <label class="field">
+          <span>Selected tier</span>
+          <input name="tier" id="tierPreset" readonly />
+        </label>
+        <div class="modal__cta">
+          <button class="btn btn--primary" type="submit">Generate my brief</button>
+          <a class="btn btn--ghost" href="intake.html">Full intake</a>
+        </div>
+      </form>
+      <p class="note">
+        On submit, we generate a downloadable brief (no server needed). You can email it or paste it into DMs.
+      </p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
