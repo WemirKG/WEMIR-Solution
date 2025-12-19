@@ -458,3 +458,7 @@ a:hover{text-decoration:underline}
 .modal[hidden] {
   display: none !important;
 }
+/* Force modal to stay hidden when the HTML attribute exists */
+.modal[hidden] {
+  display: none !important;
+}
